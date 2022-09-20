@@ -1,0 +1,116 @@
+	 All detected variables : 97
+
+	  Array : 40.  
+	 	  _COOKIE. 
+	 	  _SERVER. 
+	 	  GLOBALS. 
+	 	  wp_filter. 
+	 	  wp_actions. 
+	 	  allowedposttags. 
+	 	  allowedtags. 
+	 	  allowedentitynames. 
+	 	  allowedxmlentitynames. 
+	 	  shortcode_tags. 
+	 	  wp_registered_sidebars. 
+	 	  wp_registered_widgets. 
+	 	  wp_registered_widget_controls. 
+	 	  wp_registered_widget_updates. 
+	 	  _wp_sidebars_widgets. 
+	 	  _wp_deprecated_widgets_callbacks. 
+	 	  _wp_theme_features. 
+	 	  wp_taxonomies. 
+	 	  wp_post_types. 
+	 	  post_type_meta_caps. 
+	 	  _wp_post_type_features. 
+	 	  wp_post_statuses. 
+	 	  wp_theme_directories. 
+	 	  _wp_additional_image_sizes. 
+	 	  _wp_registered_theme_features. 
+	 	  weekday. 
+	 	  weekday_initial. 
+	 	  weekday_abbrev. 
+	 	  month. 
+	 	  month_abbrev. 
+	 	  pass_allowed_html. 
+	 	  pass_allowed_protocols. 
+	 	  sidebars_widgets. 
+	 	  wpsmiliestrans. 
+	 	  _wp_registered_nav_menus. 
+	 	  editor_styles. 
+	 	  wp_header_to_desc. 
+	 	  posts. 
+	 	  tag_templates. 
+	 	  pages. 
+
+
+	  Boolean : 9.  
+	 	  wp_did_header. 
+	 	  is_chrome. 
+	 	  is_apache. 
+	 	  compress_scripts. 
+	 	  compress_css. 
+	 	  cache_results. 
+	 	  update_post_term_cache. 
+	 	  lazy_load_term_meta. 
+	 	  update_post_meta_cache. 
+
+
+	  String : 21.  
+	 	  table_prefix. 
+	 	  wp_version. 
+	 	  tinymce_version. 
+	 	  required_php_version. 
+	 	  required_mysql_version. 
+	 	  locale. 
+	 	  PHP_SELF. 
+	 	  constant. 
+	 	  pagenow. 
+	 	  wp_rest_auth_cookie. 
+	 	  wp_smiliessearch. 
+	 	  tag. 
+	 	  comments_per_page. 
+	 	  order. 
+	 	  request. 
+	 	  template. 
+	 	  template_getter. 
+	 	  test_tetttt. 
+	 	  currentday. 
+	 	  currentmonth. 
+	 	  _sidebar_being_rendered. 
+
+
+	  Integer : 8.  
+	 	  wp_db_version. 
+	 	  blog_id. 
+	 	  content_width. 
+	 	  posts_per_page. 
+	 	  i. 
+	 	  id. 
+	 	  page. 
+	 	  numpages. 
+
+
+	  Object : 18.  
+	 	  wpdb. 
+	 	  wp_object_cache. 
+	 	  wp_embed. 
+	 	  wp_rewrite. 
+	 	  wp. 
+	 	  wp_the_query. 
+	 	  wp_query. 
+	 	  wp_widget_factory. 
+	 	  wp_roles. 
+	 	  wp_locale. 
+	 	  wp_locale_switcher. 
+	 	  current_user. 
+	 	  wp_scripts. 
+	 	  wp_sitemaps. 
+	 	  post. 
+	 	  new_sort. 
+	 	  wp_styles. 
+	 	  authordata. 
+
+
+	  Double : 1.  
+	 	  timestart. 
+
