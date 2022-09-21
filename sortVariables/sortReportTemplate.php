@@ -32,7 +32,7 @@ class sortReportTemplate
     }
 
     /**
-     * @return array whit prepared template
+     * @return array whit prepared full template
      */
     public function getFullHtmlTemplate()
     {
@@ -40,13 +40,15 @@ class sortReportTemplate
     }
 
     /**
-     * @return array whit prepared template
+     * @return array whit prepared short template
      */
     public function getShortHtmlTemplate()
     {
         return $this->constructShortHtmlTemplate();
     }
-
+    /**
+     * @return array whit prepared template for specific type
+     */
     public function getReportByType($type){
         return $this->constructTypeTemplate($type);
     }
@@ -115,7 +117,7 @@ class sortReportTemplate
     }
 
     /**
-     * construct the template
+     * construct the type template
      */
     private function constructTypeTemplate($type){
 
@@ -135,7 +137,7 @@ class sortReportTemplate
     }
 
     /**
-     * construct the template
+     * construct the short template
      */
     private function constructShortHtmlTemplate(){
 

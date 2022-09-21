@@ -6,17 +6,16 @@
  *
  * class for one-dimensional sorting of arrays of mixed variables by value type ( string, array, object, int, boolian, double .... e.x)
  *
- * public var $sorted - array containing all variables sorted by type
+ *  public var $sorted - array containing all variables sorted by type
  *  - sorted["array"] - all found arrays
  *  - sorted["object"] - all found objects
  * for access to a variable :  sortVar->sorted[ variable type ][ variable name ]
  *  .....
  *
- * public var $status - array of the count elements of value tupe
+ *  public var $status - array of the count elements of value tupe
  *  - $status["all"] - the count of all variables
  *  - $status["array] - the count of all arrays
  * .....
- *
  *
  */
 class sortVars
@@ -97,49 +96,21 @@ class sortVars
 
     /**
      *  sorting is done by calling gettype() on each variable
-     *  validation is done by is_"variable type"()
+     *
      */
     private function sortAndValidate(){
 
         foreach( $this->search_in as $key => $value ){
-
             if(!empty($value)){
-
                 $value_type = gettype($value);
-                $func = $this->createValidationFunction($value_type);
-
-                if( $func($value) ){
-
-                    if(!isset($this->sorted[$value_type])){
-                        $this->sorted[$value_type] = array();
-                    }
-                    $this->sorted[$value_type][$key] = $value;
+                if(!isset($this->sorted[$value_type])){
+                    $this->sorted[$value_type] = array();
                 }
-
+                $this->sorted[$value_type][$key] = $value;
             }
         }
 
     }
 
-    /**
-     * @param string $value_type
-     * @return string of corect is_type function
-     *
-     *  use to handle difrent variable validation functions
-     */
-    private function createValidationFunction($value_type){
-
-        switch ($value_type) {
-
-            case "boolean":
-                $value_type_name = "bool";
-                break;
-            default:
-                $value_type_name = $value_type;
-
-        }
-
-        return "is_".$value_type_name;
-    }
 
 }

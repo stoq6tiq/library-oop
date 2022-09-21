@@ -25,29 +25,54 @@ $report_defined = new generateReport($new_sort_all_defined->sorted,$new_sort_all
 <!-- display the reports -->
 <div class="conteiner" >
 
-
+    <h4> Testing classes sortVar and generateReport</h4>
 
     <div>
-        <h4>Search for connection class connectionObjectFinder</h4>
-        <p>
-            <?php
-                require_once "connectionObjectFinder.php";
-                $test_connection_finder = new connectionObjectFinder($new_sort_all_defined->sorted["object"]);
-                $test_connection_finder->searchForConnection();
 
-                foreach($test_connection_finder->getFound() as $key => $line){
-                    echo "{$key}</br>";
-                }
+        <table>
+            <thead> Short report </thead>
+            <tr>
+                <th>GLOBALS</th>
+                <th>DEFINED</th>
+            </tr>
+            <tr>
+                <td>
+                    <?php $report_globals->displayShortHtml(); ?>
+                </td>
+                <td>
+                    <?php $report_defined->displayShortHtml(); ?>
+                </td>
+            </tr>
+        </table>
 
-            ?>
-        </p>
+        <table>
+            <thead> Full report </thead>
+            <tr>
+                <th>GLOBALS</th>
+                <th>DEFINED</th>
+            </tr>
+            <tr>
+                <td>
+                    <?php $report_globals->displayFullHtml(); ?>
+                </td>
+                <td>
+                    <?php $report_defined->displayFullHtml(); ?>
+                </td>
+            </tr>
+        </table>
+
     </div>
 
     <div>
-        <?php // include "templates/test-template.php"; ?>
+        <table>
+            <thead> GLOBALS report by type </thead>
+            <tr>
+                <td>
+                    <?php $report_globals->displayReportByType("object"); ?>
+                </td>
+            </tr>
+        </table>
     </div>
-
-    <?php  include "templates/all-vars-template.php"; ?>
 
 </div>
 
